@@ -22,13 +22,15 @@ var AuthModule = require('mainframe-module-auth')
 // hook the auth module
 // if filename is valid, the database is created into
 // a file. else, it is in-memory only.
-mainframe.dock(new AuthModule(filename))
+// name is optional
+mainframe.dock(new AuthModule(filename, name="auth"))
 ```
 
 You can then access the created auth module by typing :
 ```js
 var auth = mainframe.auth
 ```
+auth is the default name of the module. If you specified a module name 'customname' while creating the module, you can access the module through 'mainframe.customname'
 
 The following methods are available :
 ```js
