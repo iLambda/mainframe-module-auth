@@ -1,0 +1,33 @@
+{
+  "name": "mainframe-module-auth",
+  "version": "0.1.0",
+  "description": "An auth module to handle multiple users for mainframe-core.",
+  "main": "lib/mainframe-module-auth.js",
+  "scripts": {
+    "start": "rm -rf out/ && babel lib --out-dir out/lib && babel test --out-dir out/test",
+    "test": "rm -rf out/ && babel lib --out-dir out/lib && babel test --out-dir out/test && node out/test/mainframe-module-auth.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iLambda/mainframe-module-auth.git"
+  },
+  "keywords": [
+    "mainframe",
+    "mainframe-core",
+    "module",
+    "auth"
+  ],
+  "author": "iLambda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iLambda/mainframe-module-auth/issues"
+  },
+  "homepage": "https://github.com/iLambda/mainframe-module-auth#readme",
+  "devDependencies": {
+    "babel-cli": "^6.3.17"
+  },
+  "dependencies": {
+    "nedb": "^1.5.1",
+    "whirlpool": "0.0.4"
+  }
+}
