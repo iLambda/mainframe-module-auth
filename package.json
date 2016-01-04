@@ -2,8 +2,9 @@
   "name": "mainframe-module-auth",
   "version": "0.1.0",
   "description": "An auth module for mainframe-core to handle multiple users.",
-  "main": "lib/mainframe-module-auth.js",
+  "main": "out/lib/mainframe-module-auth.js",
   "scripts": {
+    "postinstall": "npm run-script start",
     "start": "rm -rf out/ && babel lib --out-dir out/lib && babel test --out-dir out/test",
     "test": "rm -rf out/ && babel lib --out-dir out/lib && babel test --out-dir out/test && node out/test/mainframe-module-auth.js"
   },
