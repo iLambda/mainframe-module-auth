@@ -1,6 +1,6 @@
 {
   "name": "mainframe-module-auth",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "An auth module for mainframe-core to handle multiple users.",
   "main": "out/lib/mainframe-module-auth.js",
   "scripts": {
