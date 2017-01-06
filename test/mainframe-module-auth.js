@@ -10,6 +10,10 @@ let mainframe = new Mainframe(new AuthModule())
 mainframe.auth.register({ name:'picard', password:'paris' }, (err, res) => {
   // connect user
   mainframe.auth.login({ name: 'picard', password: 'paris' }, (err, res) => {
+    // show login
+    console.log(mainframe.auth.user)
+      // show credentials
+    console.log(mainframe.auth.credentials)
     // list users
     console.log(mainframe.auth.users, _.keys(mainframe.brain.layers))
     // log out
